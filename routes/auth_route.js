@@ -5,10 +5,10 @@ import { verifyUserToken } from "../middlewares/auth.js";
 const authRouter = express.Router();
 
 // Login
-authRouter.post("/login", login);
+authRouter.post("/login", login); 
 
 // Send OTP
-authRouter.post("/send-otp", sendOtp);
+authRouter.post("/send-otp", sendOtp); 
 
 // Verify OTP
 authRouter.post("/verify-otp", verifyOtp);

@@ -21,5 +21,11 @@
     "mongoose": "^8.8.2",
     "nodemailer": "^6.9.16",
     "otp-generator": "^4.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "mockingoose": "^2.16.2",
+    "supertest": "^7.0.0"
   }
 }
