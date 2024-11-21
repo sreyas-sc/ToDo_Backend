@@ -12,8 +12,8 @@ app.use(express.json()); // Enable parsing JSON data
 app.use(express.urlencoded({ extended: true })); // Enable parsing URL-encoded data
 
 // Middleware setup
-app.use("/auth", authRouter);
-app.use("/task-xml", taskXmlrouter);
+app.use("/auth", authRouter); // for authentication(login, register, send-otp, verify-otp)
+app.use("/task-xml", taskXmlrouter); // for saving and retrieving XML data
 
 
 // Connect to MongoDB
