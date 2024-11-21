@@ -6,7 +6,7 @@ import otpGenerator from 'otp-generator'; // Import otp-generator for generating
 import dotenv from 'dotenv'; // Import dotenv for environment variables
 dotenv.config(); // Configure dotenv
 
-import { TokenService } from '../services/TokenService'; // Import the TokenService class
+import { TokenService } from '../services/TokenService.js'; // Import the TokenService class
 const tokenService = new TokenService(); // Create an instance of the TokenService class
 
 // ***************************for user login********************************

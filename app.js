@@ -2,6 +2,7 @@ import express from "express"; // Import express
 import mongoose from "mongoose"; // Import mongoose
 import cors from "cors"; // Import cors
 import authRouter from "./routes/auth_route.js"; // Make sure this path is correct
+import taskXmlrouter from "./routes/taskXMLRoutes.js"; // Make sure this path is correct
 
 const app = express(); // Initialize express
 app.use(cors()); // Enable CORS
@@ -12,6 +13,7 @@ app.use(express.urlencoded({ extended: true })); // Enable parsing URL-encoded d
 
 // Middleware setup
 app.use("/auth", authRouter);
+app.use("/task-xml", taskXmlrouter);
 
 
 // Connect to MongoDB
