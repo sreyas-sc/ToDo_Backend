@@ -1,8 +1,8 @@
-module.exports = {
-    testEnvironment: 'node', // For testing Node.js environment
-    transform: {
-      '^.+\\.js$': 'babel-jest', // If you're using Babel for ES6+ support
-    },
-    setupFiles: ['dotenv/config'], // If you're using environment variables
-  };
-  
+export default {
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+  moduleFileExtensions: ['js', 'json'],
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
+};
